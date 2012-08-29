@@ -1,0 +1,92 @@
+/* Reset + HTML5 */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Body */
+html {
+	background: black;
+	color: white;
+}
+a { color:white; }
+
+body {
+	text-align: center;
+	font-family: Garamond, Georgia, "Times New Roman", serif;
+	overflow: auto;
+}
+
+h1,nav,#gallery {
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+
+/* Header */
+h1 {
+	top: 0.4em;
+	font-size: 2.3em;
+	font-weight: normal;
+	letter-spacing: 0.15em;
+	text-transform: uppercase;
+}
+h1 strong { font-style: normal; font-weight: normal; }
+
+/* Main Nav */
+nav {
+	bottom: 0;
+	height: 1.75em;
+	font-size: 1.25em;
+	font-variant: small-caps;
+}
+
+nav ul {
+	list-style: none;
+	margin-right: -1em;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a {
+	display: inline-block; /* set layout for IE filter */
+	margin-right: 1em;
+	text-decoration: inherit; 
+}
+
+nav a:hover, a:active {
+	text-shadow: 4px 4px 5px white;
+	/*filter: Shadow(Color=#FFFFFF, Direction=135, Strength=4);*/
+	filter: Glow(Color=#FFFFFF,Strength=3);
+}
+
+/* Gallery */
+#gallery{
+	top: 4.4em;
+	bottom: 3em;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/* height: 100% may stretch image--use large default size instead */
+	max-height: 100%;
+	max-width: 100%;
+	display: none;
+}
+
+img.current { display: block; }

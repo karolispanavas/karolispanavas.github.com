@@ -1,0 +1,35 @@
+/* Body */
+html {
+	margin: 0;
+	padding: 0;
+	background: black;
+	color: white;
+}
+
+body {
+	text-align: center;
+	font-family: "Garamond Narrow", Garamond, Georgia, "Times New Roman", serif;
+}
+
+/* Header */
+header{display: block} /* HTML5 */
+
+h1 {
+	color: red;
+	font-weight: normal;
+	font-size: 36pt;
+	text-transform: uppercase;
+	margin:0;
+}
+h1 a{
+	color:white;
+	text-decoration:none;
+}
+
+/* Galleria */
+#galleria{
+	margin-left:auto;
+	margin-right:auto;
+	height: 600px;
+	/*width:900px;*/
+}
